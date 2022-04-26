@@ -17,8 +17,8 @@ def estimateCalculation(radius,height):
     total_area = top_area + side_area
     total_sf = total_area/144
     total_mat = total_sf*25
-    total_labor = total_sf * 15
-    total_cost_estimate = total_mat + total_labor
+    total_lab = total_sf * 15
+    total_cost_estimate = total_mat + total_lab
     return total_cost_estimate
 
 @app.route('/estimate',methods = ['GET','POST'])
