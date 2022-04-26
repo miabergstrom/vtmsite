@@ -17,12 +17,10 @@
     <input type="number" id="height" name="height" required />
     <br>
     <br>
-    <input type="submit" name = "submit" id="submit" value="Submit"  />
+    <input type="submit" name = "submitt" value="Submit"  />
     <input type="reset" value="Clear"  />
+    <br>
+    <br>
 </form>
-
-<p>
-    The total cost estimate is: {{ variable }}
-</p>
-
+{%if variable %} {{variable}} {% endif %}
 {% endblock %}
